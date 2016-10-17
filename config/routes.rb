@@ -2,10 +2,11 @@ Rails.application.routes.draw do
 
   # Override Devise Controlers
   # rails generate devise:controllers
-
   devise_for :users, controllers: {
     sessions: 'users/sessions',
-    registrations: 'users/registrations'
+    registrations: 'users/registrations',
+    confirmations: 'users/confirmations',
+    passwords: 'users/passwords'
   }
 
   # Override Devise path
