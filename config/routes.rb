@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
 
+  devise_scope :user do
+    get 'sign_in', to: 'users/sessions#new'
+  end
 
   root to: "home#index"
 end
