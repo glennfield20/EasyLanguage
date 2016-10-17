@@ -26,6 +26,7 @@ end
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'awesome_print'
+  gem 'rubocop', '~> 0.44.1', require: false
 end
 
 group :test do
