@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
@@ -12,6 +11,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml-rails', '~> 0.9.0'
 gem 'devise', '~> 4.2'
+gem 'pg'
 
 group :development do
   gem 'web-console'
@@ -26,6 +26,7 @@ end
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'awesome_print'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :test do
