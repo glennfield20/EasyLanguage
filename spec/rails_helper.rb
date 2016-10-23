@@ -14,5 +14,9 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
 
   # Capybara configurations
-  Capybara.javascript_driver = :poltergeist
+  Capybara.register_driver :my_poltergeist do |app|
+    Capybara::Poltegeist::Driver.new(app, inspector: true, js_errors: false)
+  end
+
+  Capybara.javascript_driver = :my_poltergeist
 end
