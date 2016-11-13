@@ -26,6 +26,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'rspec-rails', '~> 3.5'
   gem 'spring'
+  gem 'foreman'
 end
 
 group :test do
