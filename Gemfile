@@ -27,9 +27,13 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'awesome_print'
   gem 'rspec-rails', '~> 3.5'
+  gem 'spring'
 end
 
 group :test do
+  gem 'poltergeist'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 
