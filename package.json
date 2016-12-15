@@ -8,12 +8,15 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "autoprefixer": "^6.5.4",
+    "bootstrap": "^3.3.7",
+    "postcss-asset-url-rails": "^1.0.0"
   },
   "devDependencies": {
+    "auto-reload-brunch": "^2.0.0",
     "brunch": "^2.5.1",
-    "javascript-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
-    "auto-reload-brunch": "^2.0.0"
+    "javascript-brunch": "^2.0.0",
+    "sass-brunch": "^2.9.0"
   }
 }
