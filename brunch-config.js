@@ -8,31 +8,34 @@ module.exports = {
     public: 'vendor/assets'
   },
 
-  modules: {
-    wrapper: false
-  },
-
   files: {
     javascripts: {
-      joinTo: 'javascripts/brunch/app.js': [
-        'node_modules/**',
-        'app/brunch/js/**'
-      ]
+      joinTo: {
+        'javascripts/brunch/app.js': [
+          'node_modules/**',
+          'app/brunch/js/**'
+        ]
+      }
     },
+
     stylesheets: {
-      joinTo: 'stylesheets/brunch/app.css',
+      joinTo: 'stylesheets/brunch/app.css.erb',
       order: {
-        'app/brunch/scss/utils/**',
-        'app/brunch/scss/components/**'
+        after: [
+          'app/brunch/scss/utils/**',
+          'app/brunch/scss/components/**'
+        ]
       }
     }
   },
 
   plugins: {
     sass: {
-      includePaths: [
-        'node_modules'
-      ]
+      options: {
+        includePaths: [
+          'node_modules'
+        ]
+      }
     },
 
     postcss: {
@@ -69,3 +72,4 @@ module.exports = {
     }
   }
 }
+
