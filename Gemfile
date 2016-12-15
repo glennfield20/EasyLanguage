@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails', '~> 0.9.0'
 gem 'devise', '~> 4.2'
 gem 'pg'
+gem 'npm-pipeline-rails'
 
 group :development do
   gem 'web-console'

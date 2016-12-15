@@ -20,3 +20,7 @@
 # Ignore Byebug command history file.
 .byebug_history
 .env
+
+/node_modules
+/vendor/assets/stylesheets/brunch
+/vendor/assets/javascripts/brunch
